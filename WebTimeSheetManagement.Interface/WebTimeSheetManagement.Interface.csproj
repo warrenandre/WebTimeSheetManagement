@@ -51,6 +51,7 @@
     <Compile Include="IProject.cs" />
     <Compile Include="IRoles.cs" />
     <Compile Include="IRegistration.cs" />
+    <Compile Include="IOverTime.cs" />
     <Compile Include="ITimeSheet.cs" />
     <Compile Include="ITimeSheetExport.cs" />
     <Compile Include="IUsers.cs" />

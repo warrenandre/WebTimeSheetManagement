@@ -32,3 +32,22 @@ E:\Visual Studio 2015\Projects\WebTimeSheetManagement\WebTimeSheetManagement.Con
 E:\Visual Studio 2015\Projects\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.csprojResolveAssemblyReference.cache
 E:\Visual Studio 2015\Projects\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.dll
 E:\Visual Studio 2015\Projects\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.pdb
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Concrete.dll.config
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Concrete.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Concrete.pdb
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\Dapper.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\EntityFramework.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\EntityFramework.SqlServer.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\System.Linq.Dynamic.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Interface.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Models.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Interface.pdb
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\WebTimeSheetManagement.Models.pdb
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\Dapper.xml
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\EntityFramework.xml
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\bin\Release\EntityFramework.SqlServer.xml
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.csproj.AssemblyReference.cache
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.csproj.CoreCompileInputs.cache
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.csproj.CopyComplete
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.dll
+C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement.Concrete\obj\Release\WebTimeSheetManagement.Concrete.pdb

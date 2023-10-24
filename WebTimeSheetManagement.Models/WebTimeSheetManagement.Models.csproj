@@ -62,11 +62,18 @@
     <Compile Include="RegistrationViewSummaryModel.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="TimeSheetAuditTB.cs" />
+    <Compile Include="OverTimeAuditTB.cs" />
+    <Compile Include="OverTimeDetails.cs" />
     <Compile Include="TimeSheetDetails.cs" />
+    <Compile Include="OverTimeDetailsView.cs" />
     <Compile Include="TimeSheetDetailsView.cs" />
+    <Compile Include="OverTimeExportModel.cs" />
     <Compile Include="TimeSheetExportModel.cs" />
+    <Compile Include="OverTimeMaster.cs" />
     <Compile Include="TimeSheetMaster.cs" />
+    <Compile Include="OverTimeMasterView.cs" />
     <Compile Include="TimeSheetMasterView.cs" />
+    <Compile Include="OverTimeModel.cs" />
     <Compile Include="TimeSheetModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

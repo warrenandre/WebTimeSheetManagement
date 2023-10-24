@@ -16,6 +16,7 @@ namespace WebTimeSheetManagement.Models
         public string Description { get; set; }
         public int? ProjectID { get; set; }
         public int? TimeSheetMasterID { get; set; }
+        public int? OverTimeMasterID { get; set; }
         public DateTime? CreatedOn { get; set; }
         public int? UserID { get; set; }
 

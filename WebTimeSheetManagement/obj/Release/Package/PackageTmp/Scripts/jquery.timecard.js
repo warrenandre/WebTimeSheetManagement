@@ -1,22 +1,33 @@
-﻿$(document).ready(function () {
+﻿$(document).ready(function ()
+{
+  
     $("#_panelmain").hide();
+    $("#_panelmainbutton").hide();
     DisableonLoad();
     $("#datepicker_start").datepicker(
     {
         dateFormat: "yy-mm-dd",
         changeMonth: true,
         changeYear: true,
+        constrainInput: false,
         yearRange: new Date().getFullYear() + ':' + new Date().getFullYear(),
-        onSelect: function (selectedDate) {
-            CheckIsDateAlreadyUsed(selectedDate);
+            onSelect: function (selectedDate) {
+                if (window.location.href.includes("TimeSheet")) {
+                    CheckIsDateAlreadyUsed(selectedDate);
+                } else {
+                    CheckIsOverTimeDateAlreadyUsed(selectedDate);
+                }
 
         },
         beforeShowDay: function (date) {
             return [date.getDay() === 0, ''];
         }
     });
-
-
+    $("#datepicker_start").keydown(false);
+    $("#datepicker_start").keypress(false);
+    $('#datepicker_start').bind("cut copy paste", function (e) {
+        e.preventDefault();
+    });
 });
 
 
@@ -169,7 +180,9 @@ function CheckIsDateAlreadyUsed(selectedDate) {
                 $("#text5").val('');
                 $("#text6").val('');
                 $("#text7").val('');
+                
                 $("#_panelmain").hide();
+                $("#_panelmainbutton").hide();
                 alert("You have already filled Details for Choosen Date !");
 
             }
@@ -177,6 +190,39 @@ function CheckIsDateAlreadyUsed(selectedDate) {
                 var date2 = $('#datepicker_start').datepicker('getDate', '+1');
                 CalEnd();
                 $("#_panelmain").show();
+                $("#_panelmainbutton").show();
+            }
+        }
+    });
+}
+
+function CheckIsOverTimeDateAlreadyUsed(selectedDate) {
+    var url = "/OverTime/CheckIsDateAlreadyUsed";
+
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: { FromDate: selectedDate },
+        success: function (response) {
+            if (response == true) {
+                $("#text1").val('');
+                $("#text2").val('');
+                $("#text3").val('');
+                $("#text4").val('');
+                $("#text5").val('');
+                $("#text6").val('');
+                $("#text7").val('');
+
+                $("#_panelmain").hide();
+                $("#_panelmainbutton").hide();
+                alert("You have already filled Details for Choosen Date !");
+
+            }
+            else {
+                var date2 = $('#datepicker_start').datepicker('getDate', '+1');
+                CalEnd();
+                $("#_panelmain").show();
+                $("#_panelmainbutton").show();
             }
         }
     });

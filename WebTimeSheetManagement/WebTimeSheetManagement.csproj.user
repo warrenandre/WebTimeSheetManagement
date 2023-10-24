@@ -10,7 +10,7 @@
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_LayoutUser.cshtml</WebStackScaffolding_LayoutPageFile>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
-    <NameOfLastUsedPublishProfile>Sai</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\Properties\PublishProfiles\RFWebTimeSheetManagement - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
     <WebStackScaffolding_DbContextTypeFullName>WebTimeSheetManagement.Concrete.DatabaseContext</WebStackScaffolding_DbContextTypeFullName>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />

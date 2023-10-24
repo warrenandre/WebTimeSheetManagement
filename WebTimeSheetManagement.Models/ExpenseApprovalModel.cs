@@ -17,4 +17,10 @@ namespace WebTimeSheetManagement.Models
         public int TimeSheetMasterID { get; set; }
         public string Comment { get; set; }
     }
+
+    public class OverTimeApproval
+    {
+        public int OverTimeMasterID { get; set; }
+        public string Comment { get; set; }
+    }
 }

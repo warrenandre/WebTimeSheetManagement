@@ -13,17 +13,18 @@ namespace WebTimeSheetManagement.Controllers
 
         private ITimeSheet _ITimeSheet;
         private IExpense _IExpense;
-
+        private IOverTime _IOverTime;
         public UserDashboardController()
         {
             _ITimeSheet = new TimeSheetConcrete();
             _IExpense = new ExpenseConcrete();
+            _IOverTime = new OverTimeConcrete();
         }
         // GET: UserDashboard
         public ActionResult Dashboard()
         {
             var timesheetResult = _ITimeSheet.GetTimeSheetsCountByUserID(Convert.ToString(Session["UserID"]));
-
+            
             if (timesheetResult != null)
             {
                 ViewBag.SubmittedTimesheetCount = timesheetResult.SubmittedCount;
@@ -37,6 +38,20 @@ namespace WebTimeSheetManagement.Controllers
                 ViewBag.RejectedTimesheetCount = 0;
             }
 
+            var OverTimeResults = _IOverTime.GetOverTimesCountByUserID(Convert.ToString(Session["UserID"]));
+
+            if (OverTimeResults != null)
+            {
+                ViewBag.SubmittedOverTimeCount = OverTimeResults.SubmittedCount;
+                ViewBag.ApprovedOverTimeCount = OverTimeResults.ApprovedCount;
+                ViewBag.RejectedOverTimeCount = OverTimeResults.RejectedCount;
+            }
+            else
+            {
+                ViewBag.SubmittedOverTimeCount = 0;
+                ViewBag.ApprovedOverTimeCount = 0;
+                ViewBag.RejectedOverTimeCount = 0;
+            }
 
             var expenseResult = _IExpense.GetExpenseAuditCountByUserID(Convert.ToString(Session["UserID"]));
 

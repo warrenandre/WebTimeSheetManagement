@@ -65,5 +65,59 @@ namespace WebTimeSheetManagement.Helpers
             }
         }
 
+        public static List<GetHours> GetHoursbyOverTimeMasterID(int overTimeMasterID, int ProjectID)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["TimesheetDBEntities"].ToString()))
+            {
+                con.Open();
+                try
+                {
+                    var param = new DynamicParameters();
+                    param.Add("@OverTimeMasterID", overTimeMasterID);
+                    param.Add("@ProjectID", ProjectID);
+                    var result = con.Query<GetHours>("Usp_GetHoursbyOverTimeMasterID", param, null, true, 0, System.Data.CommandType.StoredProcedure).ToList();
+                    if (result.Count > 0)
+                    {
+                        return result;
+                    }
+                    else
+                    {
+                        return new List<GetHours>();
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static string GetDescriptionbyOverTimeMasterID(int OverTimeMasterID, int ProjectID)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["TimesheetDBEntities"].ToString()))
+            {
+                con.Open();
+                try
+                {
+                    var param = new DynamicParameters();
+                    param.Add("@OverTimeMasterID", OverTimeMasterID);
+                    param.Add("@ProjectID", ProjectID);
+                    var result = con.Query<string>("GetDescriptionbyOverTimeMasterID", param, null, true, 0, System.Data.CommandType.StoredProcedure).FirstOrDefault();
+                    if (result != null)
+                    {
+                        return result;
+                    }
+                    else
+                    {
+                        return string.Empty;
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
     }
 }

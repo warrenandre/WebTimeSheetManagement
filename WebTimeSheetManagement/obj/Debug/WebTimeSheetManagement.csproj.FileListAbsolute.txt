@@ -456,7 +456,6 @@ C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\WebTime
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\CaptchaMvc.pdb
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\CaptchaMvc.xml
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\ClosedXML.xml
-C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\Dapper.xml
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\Microsoft.AI.DependencyCollector.xml
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Richfield\TimeSheet\WebTimeSheetManagement\WebTimeSheetManagement\bin\Microsoft.AI.Web.xml

@@ -13,6 +13,7 @@ namespace WebTimeSheetManagement.Concrete
         public DatabaseContext()
             : base("name=TimesheetDBEntities")
         {
+            
         }
 
         public DbSet<Registration> Registration { get; set; }
@@ -29,5 +30,9 @@ namespace WebTimeSheetManagement.Concrete
         public DbSet<AssignedRoles> AssignedRoles { get; set; }
 
         public System.Data.Entity.DbSet<WebTimeSheetManagement.Models.NotificationsTB> NotificationsTBs { get; set; }
+
+        public DbSet<OverTimeMaster> OverTimeMaster { get; set; }
+        public DbSet<OverTimeDetails> OverTimeDetails { get; set; }
+        public DbSet<OverTimeAuditTB> OverTimeAuditTB { get; set; }
     }
 }
