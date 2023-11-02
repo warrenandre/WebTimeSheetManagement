@@ -146,18 +146,3 @@ SELECT
   group by Period      
 end
 GO
-
-/****** Object:  StoredProcedure [dbo].[GetDescriptionbyOverTimeMasterID]    Script Date: 05/19/2018 09:45:09 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE proc [dbo].[GetDescriptionbyOverTimeMasterID]      
-@OverTimeMasterID int   ,  
-@ProjectID int   
-as      
-begin      
-
-select Description from DescriptionTB where OverTimeMasterID =@OverTimeMasterID and ProjectID =@ProjectID  
-end
-GO
