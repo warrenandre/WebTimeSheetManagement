@@ -367,5 +367,5 @@ FodyWeavers.xsd
 WebTimeSheetManagement/obj/*
 
 WebTimeSheetManagement/bin/*
-
+/**/bin/*
 /**/.dll
