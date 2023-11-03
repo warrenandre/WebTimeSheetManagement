@@ -363,4 +363,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-WebTimeSheetManagement/obj/
+#ignore all files in WebTimeSheetManagement obj folder
+WebTimeSheetManagement/obj/*
