@@ -365,3 +365,5 @@ FodyWeavers.xsd
 
 #ignore all files in WebTimeSheetManagement obj folder
 WebTimeSheetManagement/obj/*
+
+WebTimeSheetManagement/bin/*
