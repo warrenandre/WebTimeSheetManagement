@@ -369,10 +369,10 @@ WebTimeSheetManagement/obj/*
 WebTimeSheetManagement/bin/*
 /**/bin/*
 /**/.dll
-/WebTimeSheetManagement.Interface/obj/Debug/WebTimeSheetManagement.Interface.csproj.AssemblyReference.cache
-/WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Concrete.dll
-/WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Concrete.pdb
-/WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Interface.dll
+/WebTimeSheetManagement.Interface/obj/*
+/WebTimeSheetManagement.Concrete/bin/*
+/WebTimeSheetManagement.Concrete/bin/*
+/WebTimeSheetManagement.Concrete/bin/*
 /WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Interface.pdb
 /WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Models.dll
 /WebTimeSheetManagement.Concrete/bin/Debug/WebTimeSheetManagement.Models.pdb
