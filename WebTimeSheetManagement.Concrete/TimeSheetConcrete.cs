@@ -429,6 +429,18 @@ namespace WebTimeSheetManagement.Concrete
             }
         }
 
+        public DisplayViewModel GetOverTimeSheetsCountByAdminID(string AdminID)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["TimesheetDBEntities"].ToString()))
+            {
+                var param = new DynamicParameters();
+                param.Add("@AdminID", AdminID);
+                return con.Query<DisplayViewModel>("Usp_GetOverTimeSheetsCountByAdminID", param, null, true, 0, System.Data.CommandType.StoredProcedure).FirstOrDefault();
+            }
+        }
+
+        
+
         public IQueryable<TimeSheetMasterView> ShowAllApprovedTimeSheet(string sortColumn, string sortColumnDir, string Search, int UserID)
         {
             var _context = new DatabaseContext();
@@ -471,15 +483,13 @@ namespace WebTimeSheetManagement.Concrete
                                            Username = registration.Username,
                                            SubmittedMonth = SqlFunctions.DateName("MONTH", timesheetmaster.ToDate).ToString()
 
-
-
-
                                        });
 
             if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDir)))
             {
                 IQueryabletimesheet = IQueryabletimesheet.OrderBy(sortColumn + " " + sortColumnDir);
             }
+
             if (!string.IsNullOrEmpty(Search))
             {
                 IQueryabletimesheet = IQueryabletimesheet.Where(m => m.FromDate == Search || m.Username == Search);

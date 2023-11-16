@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Security;
 
 namespace WebTimeSheetManagement.Models
 {
@@ -15,8 +16,15 @@ namespace WebTimeSheetManagement.Models
         [MinLength(7, ErrorMessage = "Minimum Password must be 7 in charaters")]
         public string OldPassword { get; set; }
 
-        [MinLength(7, ErrorMessage = "Minimum Password must be 7 in charaters")]
         [Required(ErrorMessage = "Enter New Password")]
+        [MembershipPassword(
+    MinRequiredNonAlphanumericCharacters = 1,
+    MinNonAlphanumericCharactersError = "Your password needs to contain at least one symbol (!, @, #, etc) .",
+    ErrorMessage = "Your password must be 8 characters long and contain at least one symbol (!, @, #, etc) and one number..",
+    MinRequiredPasswordLength = 8,
+    MinPasswordLengthError = "Password must be 8 characters long.",
+    PasswordStrengthRegularExpression = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$"
+)]
         public string NewPassword { get; set; }
     }
 }

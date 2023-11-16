@@ -27,7 +27,7 @@ namespace WebTimeSheetManagement.Controllers
             try
             {
                 var timesheetResult = _ITimeSheet.GetTimeSheetsCountByAdminID(Convert.ToString(Session["AdminUser"]));
-
+                var overTimesheetResult = _ITimeSheet.GetOverTimeSheetsCountByAdminID(Convert.ToString(Session["AdminUser"]));
                 if (timesheetResult != null)
                 {
                     ViewBag.SubmittedTimesheetCount = timesheetResult.SubmittedCount;
@@ -39,6 +39,19 @@ namespace WebTimeSheetManagement.Controllers
                     ViewBag.SubmittedTimesheetCount = 0;
                     ViewBag.ApprovedTimesheetCount = 0;
                     ViewBag.RejectedTimesheetCount = 0;
+                }
+
+                if (overTimesheetResult != null)
+                {
+                    ViewBag.SubmittedOverTimesheetCount = overTimesheetResult.SubmittedCount;
+                    ViewBag.ApprovedOverTimesheetCount = overTimesheetResult.ApprovedCount;
+                    ViewBag.RejectedOverTimesheetCount = overTimesheetResult.RejectedCount;
+                }
+                else
+                {
+                    ViewBag.SubmittedOverTimesheetCount = 0;
+                    ViewBag.ApprovedOverTimesheetCount = 0;
+                    ViewBag.RejectedOverTimesheetCount = 0;
                 }
 
 
