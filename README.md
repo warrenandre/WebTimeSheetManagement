@@ -60,4 +60,24 @@ Password :-1234567
 
 
 
+<b>Features to be added:</b>
+1. Overtime feature
+2. Facial Recognition:
+
+    Azure Cognitive Services:
+
+    Visit the Azure Portal.
+    Create a new Azure Cognitive Services resource.
+    Choose the Face API service.
+    Get API Key and Endpoint:
+
+    Once the resource is created, obtain the API key and endpoint from the Azure Portal.
+    Use Azure Face SDK in C#:
+
+    Install the Microsoft.Azure.CognitiveServices.Vision.Face NuGet package in your project.
+
+
+
+
+
 
